@@ -57,7 +57,7 @@ def deduce_next_hussies_page(page):
         hussieresponse = urllib.urlopen("http://www.mspaintadventures.com/6/" + link + ".txt")
         readhussie = hussieresponse.read()
         if readhussie.find("404 Not Found") == -1:
-            return "\n".join(readhussie.splitlines())
+            return link
         else:
             return
     return link
