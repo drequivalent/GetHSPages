@@ -1,0 +1,68 @@
+GetHSPages
+==========================================================================
+
+A tool for getting new MS Paint Adventures Homestuck pages into Homestuck
+Translation Project repository.
+For example:
+> gethspages -r ~/Homestuck-ru
+will grab new pages from MS Paint Adventures website, along with graphical
+content, add them to the working directory and push it up to the remote
+origin.
+This program supports settings, so you can set the working directory and
+just call the program.
+
+Инструмент для загрузки новых страниц вебкомикса MS Paint Adventures
+Homestuck в репозиторий Перевода Homestuck (на руский язык).
+К примеру,
+> gethspages -r ~/Homestuck-ru
+возьмет новые страницы с сайта MS Paint Adventures вместе с графическим
+содержанием в рабочую директорию и закачает их в родительский репозиторий.
+Программа поддерживает настройки, так что можно назначить рабочую
+директорию и просто вызвать программу.
+
+==========================================================================
+
+Usage: gethspages [-h] [-r path] [-m text] [--nopush] [--nocollect]
+                  [--set-repo path] [--set-message text]
+
+optional arguments:
+  -h, --help          show this help message and exit
+  -r path             use this working directory
+  -m text             use this commit message
+  --nopush            do not push to the origin
+  --nocollect         do not run Django's collectstatic
+  --set-repo path     sets the path of the working directory in the
+                      config file
+  --set-message text  sets the commit message in the config file
+
+==========================================================================
+
+Синтаксис: gethspages [-h] [-r путь] [-m текст] [--nopush] [--nocollect]
+                  [--set-repo путь] [--set-message текст]
+
+optional arguments:
+  -h, --help          показать справку и завершиться
+  -r путь             использовать этот репозиторий
+  -m текст            использовать это сообщение
+  --nopush            не загружать в родительский репозиторий
+  --nocollect         не вызывать collectstatic из Django
+  --set-repo path     назначить репозиторий в конфигурационном файле
+  --set-message text  назначить сообщение в конфигурационном файле
+
+==========================================================================
+
+COPYRIGHT NOTICE: MS Paint Adventures website and Homestuck belong to
+Andrew Hussie and MS Paint Adventures team. The author of this program 
+makes absolutely no profit from it, and distributes it freely. Anyone
+can grab it and do pretty much what they desire with it. within pretty
+broad limits of the GPL license.
+Made with love by dr. Equivalent the Incredible II and the Homestuck 
+(Russian) Translation Project.
+--------------------------------------------------------------------------
+Все права на сайт MS Paint Adventures и Homestuck принадлежат Эндрю Хасси
+и команде MS Paint Adventures. Автор данной программы не получает никакой
+прибыли от нее, и распространяет ее свободно. Любой желающий может взять
+ее и сотворить с ней что душе угодно в довольно свободных рамках лицензии
+GPL.
+dr. Equivalent the Incredible II сделал эту программу с любовью для
+Перевода интерактивного вэб-комикса Homestuck (на русский язык)
